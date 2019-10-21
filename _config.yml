@@ -1,0 +1,131 @@
+gems: [jekyll-paginate]
+######################### theme kunka condigure ##############################################
+# Where things are
+source:       .
+destination:  ./_site
+plugins_dir:  ./_plugins
+layouts_dir:  ./_layouts
+paginate:     8
+
+# Handling Reading
+safe:         false
+include:      [".htaccess"]
+exclude:      []
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "mkdown,mkdn,mkd,md"
+textile_ext:  "textile"
+
+# Filtering Content
+show_drafts:  null
+limit_posts:  0
+future:       true
+unpublished:  false
+
+# Conversion
+markdown:     kramdown
+highlighter:  pygments
+lsi:          false
+excerpt_separator: "\n\n"
+
+# Serving
+detach:       false
+port:         4000
+host:         127.0.0.1
+baseurl:      "" # does not include hostname
+
+# Outputting
+permalink:     date
+paginate_path: /page:num
+timezone:      null
+
+
+#Site config
+title: Jekyll Theme
+description: Be strict with yourself at all times.
+keywords: Jekyll Theme
+url: /hyperlink
+feed: /atom.xml
+favicon: http://jekyllrb.com/favicon.png
+
+#Nav config
+nav:
+  - text: 首页
+    url: index.html
+  - text: 分类目录 
+    url: navigations/categories.html
+  - text: 文章归档
+    url: navigations/archives.html
+  - text: 联系我
+    url: navigations/contact.html
+  - text: 友情链接
+    url: navigations/links.html
+
+#Author config
+author:
+    name: Cups
+    email: 1191567189@qq.com
+    imageLink: /images/the_huanghe_river.png
+    simpleIntro: Cups<br>22<br>区块链方向研究生
+    detailIntro:
+      <p>Jekyll 是一个简洁的、特别针对博客平台的 静态网站 生成器。它使用一个模板目录作为网站布局的基础框架，并在其上运行 Textile 、 Markdown 或 Liquid 标记语言的转换器，最终生成一个完整的静态Web站点，可以被放置在Apache或者你喜欢的其他任何Web服务器上。它同时也是 GitHub Pages 、一个由 GitHub 提供的用于托管项目主页或博客的服务，在后台所运行的引擎。</p>
+
+#Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
+follow:
+#  - class: icon-rss
+#    url: /atom.xml
+  - class: icon-github-alt
+    url: https://github.com/CupsWen/cupswen.github.io
+#  - class: icon-qq
+#    url: https://user.qzone.qq.com/1191567189/
+  - class: icon-github-alt
+    url: https://github.com/CupsWen
+  - class: icon-twitter
+#    url: http://twitter.com
+  - class: icon-google-plus
+#    url: http://google.com
+
+#Links
+customLinks:
+
+  - item:
+    - text: Android
+      url: https://www.android-doc.com/tools/help/android.html
+    - text: 菜鸟教程 
+      url: https://www.runoob.com/
+    - text: hyperledger中文文档
+      url: https://hyperledgercn.github.io/hyperledgerDocs/
+    message: Tools
+  - item:
+    - text: 中国知网
+      url: https://lib.zut.edu.cn/info/1019/4881.htm
+    - text: 计算机视觉
+      url: https://www.52cv.net/?p=524
+    - text: 中国物联网
+      url: http://www.iotcn.org.cn/
+    - text: 中国区块链研究中心
+      url: https://brcc.swufe.edu.cn/
+    - text: 中国区块链社区
+      url: https://yq.aliyun.com/zt/448183
+    message: Links
+  
+
+#comment config
+disqus:
+  config: false
+  id: cupswen
+
+#################################### global configure #######################################
+
+username: cupswen
+baseurl: /hyperlink
+markdown: rouge
+safe: false
+highlighter: pygments
+title: Cups
+description: Be strict with yourself at all times.
+theme: kunka
+disqusname: Cups
+
+# theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
+# those themes are all come from GitHub Pages Themes
